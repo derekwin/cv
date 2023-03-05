@@ -127,10 +127,12 @@ section {
 
   $color-default:     lighten($label-default-bg, 20%);
   $color-cpp:         #045088;
+  $color-c:           #045088;
   $color-ember:       #f23818;
   $color-rails:       #c00;
   $color-go:          darken(#90e4e6, 20%);
   $color-mathematica: #f4792f;
+  $color-cs: #f4792f;
   $color-python:      darken(#ffe260, 25%);
 
   @mixin label($color) {
@@ -143,6 +145,10 @@ section {
 
   .label-cpp {
     @include label($color-cpp);
+  }
+
+  .label-c {
+    @include label($color-c);
   }
 
   .label-ember {
@@ -159,6 +165,10 @@ section {
 
   .label-mathematica {
     @include label($color-mathematica);
+  }
+
+  .label-cs {
+    @include label($color-cs);
   }
 
   .label-python {
